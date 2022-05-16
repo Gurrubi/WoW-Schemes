@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    background-image: url(../img/FondoWoW.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.header{
+    position: relative;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #23232390;
+    color: #eeeeee;
+    height: 7vh;
+    border-bottom: #eeeeee90 4px solid;
+}
+
+.header .todo{
+    display: flex;
+    width: 100%;
+}
+
+.header .todo .espacio, .header .todo .informacion{
+    width: 50%;
+    font-family: 'Arvo';
+}
+
+.header .todo .informacion{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header .todo .informacion .temas{
+    display: inline-block;
+}
+
