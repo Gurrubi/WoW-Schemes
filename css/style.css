@@ -18,6 +18,8 @@ body{
     color: #eeeeee;
     height: 7vh;
     border-bottom: #eeeeee90 4px solid;
+    border-radius: 0% 0% 20% 20%;
+    box-shadow: #23232390 0px 0px 30px;
 }
 
 .header .todo{
@@ -38,5 +40,54 @@ body{
 
 .header .todo .informacion .temas{
     display: inline-block;
+    cursor: pointer;
 }
 
+.header .todo .informacion .temas:hover{
+    color: #0070ffe0;
+}
+
+.header .todo .informacion .temas:active{
+    filter: brightness(200%);
+}
+
+.header .todo .informacion .select{
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    position: relative;
+    background-color: #23232390;
+    color: #eeeeee;
+    border: 1px #eee solid;
+    border-radius: 2px;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 70px;
+}
+
+.header .todo .informacion .select .todasOpciones .opciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    position: relative;
+    opacity: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius:4px ;
+}
+
+.header .todo .informacion .select .todasOpciones{
+    position: absolute;
+    top: 25px;
+    background-color: #eeeeee70;
+    width: 0px;
+    opacity: 0;
+    transition: 1s;
+    padding: 0px;
+    border-radius: 4px;
+}
+
+.header .todo .informacion .select .todasOpciones .opciones:hover{
+    background-color: #eeeeee90;
+}
